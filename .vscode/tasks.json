@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "D:/Modding/Battletech/PathfindingFixes/src/PathfindingFixes.csproj"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "copy",
+      "type": "shell",
+      "command": "cp",
+      "args": [
+        "D:/Modding/Battletech/PathfindingFixes/src/bin/Debug/net471/PathfindingFixes.dll",
+        "'D:/Program Files (x86)/Steam/steamapps/common/BATTLETECH/Mods/PathfindingFixes'"
+      ]
+    },
+    {
+      "label": "copy (hbs)",
+      "type": "shell",
+      "command": "cp",
+      "args": [
+        "D:/Modding/Battletech/PathfindingFixes/src/bin/Debug/net471/PathfindingFixes.dll",
+        "'C:/Users/Rich/Documents/my games/BattleTech/mods/HBS/PathfindingFixes'"
+      ]
+    },
+    {
+      "label": "copy (assets)",
+      "type": "shell",
+      "command": "./copy-assets.sh"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "Name": "Pathfinding Fixes",
+  "Enabled": true,
+
+  "Version": "0.0.1",
+  "Description": "An HBS BattleTech mod that rewrites pathfinding to be faster and more consistent",
+  "Author": "HamsterBoo",
+
+  "DLL": "PathfindingFixes.dll",
+  "DLLEntryPoint": "PathfindingFixes.Main.Init"
+}
